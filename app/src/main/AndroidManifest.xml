@@ -8,7 +8,9 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,10 +25,16 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name=".CreateRoom" />
-        <activity android:name=".JoinRoom" />
-        <activity android:name=".EditPlaylist" />
-        <activity android:name=".playlist"></activity>
+        <activity
+            android:name=".CreateRoom"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".JoinRoom"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditPlaylist"
+            android:screenOrientation="portrait" />
+        <activity android:name=".AdminView"></activity>
     </application>
 
 </manifest>

@@ -8,7 +8,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.team.hotpot.CreateRoom">
+    tools:context="com.example.team.hotpot.CreateRoom"
+    android:background="#93969b">
 
     <Button
         android:text="Back"
@@ -28,8 +29,9 @@
         android:ems="10"
         android:layout_marginTop="27dp"
         android:id="@+id/editText"
-        android:background="#198"
+        android:background="#ff00ddff"
         android:textColor="#000"
+        android:textCursorDrawable="@null"
         android:layout_below="@+id/editText3"
         android:layout_alignLeft="@+id/editText3"
         android:layout_alignStart="@+id/editText3" />
@@ -54,8 +56,9 @@
         android:id="@+id/editText3"
         android:layout_marginRight="14dp"
         android:layout_marginEnd="14dp"
-        android:background="#198"
+        android:background="#ff00ddff"
         android:textColor="#000"
+        android:textCursorDrawable="@null"
         android:layout_alignBaseline="@+id/textView"
         android:layout_alignBottom="@+id/textView"
         android:layout_alignParentRight="true"
@@ -92,7 +95,7 @@
         android:layout_alignEnd="@+id/editText"
         android:layout_marginRight="12dp"
         android:layout_marginEnd="12dp"
-        android:buttonTint="#198"/>
+        android:buttonTint="#ff00ddff"/>
 
     <CheckBox
         android:text="Jazz"
@@ -102,7 +105,7 @@
         android:layout_alignTop="@+id/textView3"
         android:layout_alignLeft="@+id/checkBox19"
         android:layout_alignStart="@+id/checkBox19"
-        android:buttonTint="#198"/>
+        android:buttonTint="#ff00ddff"/>
 
     <CheckBox
         android:text="Classical"
@@ -111,7 +114,7 @@
         android:id="@+id/checkBox19"
         android:layout_below="@+id/checkBox18"
         android:layout_centerHorizontal="true"
-        android:buttonTint="#198"/>
+        android:buttonTint="#ff00ddff"/>
 
     <CheckBox
         android:text="Rock"
@@ -121,7 +124,7 @@
         android:layout_below="@+id/checkBox17"
         android:layout_alignLeft="@+id/checkBox17"
         android:layout_alignStart="@+id/checkBox17"
-        android:buttonTint="#198"/>
+        android:buttonTint="#ff00ddff"/>
 
     <CheckBox
         android:text="Alternative"
@@ -131,7 +134,7 @@
         android:layout_below="@+id/checkBox19"
         android:layout_alignLeft="@+id/checkBox19"
         android:layout_alignStart="@+id/checkBox19"
-        android:buttonTint="#198"/>
+        android:buttonTint="#ff00ddff"/>
 
     <CheckBox
         android:text="Hip-Hop"
@@ -141,7 +144,7 @@
         android:layout_alignLeft="@+id/checkBox20"
         android:layout_alignStart="@+id/checkBox20"
         android:id="@+id/checkBox22"
-        android:buttonTint="#198"/>
+        android:buttonTint="#ff00ddff"/>
 
     <CheckBox
         android:text="Metal"
@@ -151,7 +154,7 @@
         android:layout_below="@+id/checkBox21"
         android:layout_alignLeft="@+id/checkBox21"
         android:layout_alignStart="@+id/checkBox21"
-        android:buttonTint="#198"/>
+        android:buttonTint="#ff00ddff"/>
 
     <CheckBox
         android:text="Electronic"
@@ -161,7 +164,7 @@
         android:layout_alignLeft="@+id/checkBox22"
         android:layout_alignStart="@+id/checkBox22"
         android:id="@+id/checkBox24"
-        android:buttonTint="#198"/>
+        android:buttonTint="#ff00ddff"/>
 
 
     <TextView
@@ -208,28 +211,28 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="35dp"
                 android:id="@+id/radioButton"
-                android:buttonTint="#198"/>
+                android:buttonTint="#ff00ddff"/>
 
             <RadioButton
                 android:text="Top Picks"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/radioButton2"
-                android:buttonTint="#198"/>
+                android:buttonTint="#ff00ddff"/>
 
             <RadioButton
                 android:text="Admin Only"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/radioButton3"
-                android:buttonTint="#198"/>
+                android:buttonTint="#ff00ddff"/>
 
             <RadioButton
                 android:text="List"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/radioButton4"
-                android:buttonTint="#198"/>
+                android:buttonTint="#ff00ddff"/>
         </RadioGroup>
     </LinearLayout>
 

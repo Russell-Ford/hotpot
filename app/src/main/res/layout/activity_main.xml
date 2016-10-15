@@ -8,47 +8,51 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.team.hotpot.MainActivity">
-
-    <Button
-        android:text="Edit playlist"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button3"
-        android:layout_marginTop="86dp"
-        android:layout_below="@+id/button2"
-        android:layout_centerHorizontal="true"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:background="@android:color/holo_green_dark"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:onClick="editPlaylist"
-        android:textColor="#000"/>
+    tools:context="com.example.team.hotpot.MainActivity"
+    android:background="#93969b">
 
     <Button
         android:text="Create"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/button"
-        android:layout_marginTop="59dp"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:background="@android:color/holo_green_dark"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:background="@android:color/holo_blue_bright"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:onClick="createRoom"
+        android:textColor="#000"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textColor="#000"/>
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="65dp" />
 
     <Button
         android:text="Join"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/button2"
-        android:layout_marginTop="86dp"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:background="@android:color/holo_green_light"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:background="@android:color/holo_blue_bright"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:onClick="joinRoom"
+        android:textColor="#000"
         android:layout_below="@+id/button"
-        android:layout_centerHorizontal="true"
-        android:textColor="#000"/>
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="75dp" />
+
+    <Button
+        android:text="Edit playlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:background="@android:color/holo_blue_bright"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:onClick="editPlaylist"
+        android:textColor="#000"
+        android:layout_below="@+id/button2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="72dp" />
 </RelativeLayout>
