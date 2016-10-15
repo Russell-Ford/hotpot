@@ -10,17 +10,40 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.team.hotpot.CreateRoom">
 
+    <Button
+        android:text="Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button6"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="goBack"
+        android:textColor="#000"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_marginTop="27dp"
+        android:id="@+id/editText"
+        android:background="#198"
+        android:textColor="#000"
+        android:layout_below="@+id/editText3"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_alignStart="@+id/editText3" />
+
     <TextView
         android:text="Room Name:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_marginTop="33dp"
+        android:id="@+id/textView"
+        android:textColor="#000"
+        android:layout_below="@+id/button6"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="21dp"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="34dp"
-        android:id="@+id/textView" />
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -28,11 +51,190 @@
         android:inputType="textPersonName"
         android:text=""
         android:ems="10"
-        android:id="@+id/editText"
-        android:layout_alignTop="@+id/textView"
+        android:id="@+id/editText3"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp"
+        android:background="#198"
+        android:textColor="#000"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="11dp"
-        android:layout_marginEnd="11dp"
-        android:layout_alignBottom="@+id/textView" />
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Genre Restriction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:id="@+id/textView3"
+        android:textColor="#000"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Password:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textColor="#000"
+        android:layout_above="@+id/textView3"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <CheckBox
+        android:text="Country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox17"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignRight="@+id/editText"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp"
+        android:buttonTint="#198"/>
+
+    <CheckBox
+        android:text="Jazz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox18"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignLeft="@+id/checkBox19"
+        android:layout_alignStart="@+id/checkBox19"
+        android:buttonTint="#198"/>
+
+    <CheckBox
+        android:text="Classical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox19"
+        android:layout_below="@+id/checkBox18"
+        android:layout_centerHorizontal="true"
+        android:buttonTint="#198"/>
+
+    <CheckBox
+        android:text="Rock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox20"
+        android:layout_below="@+id/checkBox17"
+        android:layout_alignLeft="@+id/checkBox17"
+        android:layout_alignStart="@+id/checkBox17"
+        android:buttonTint="#198"/>
+
+    <CheckBox
+        android:text="Alternative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox21"
+        android:layout_below="@+id/checkBox19"
+        android:layout_alignLeft="@+id/checkBox19"
+        android:layout_alignStart="@+id/checkBox19"
+        android:buttonTint="#198"/>
+
+    <CheckBox
+        android:text="Hip-Hop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox20"
+        android:layout_alignLeft="@+id/checkBox20"
+        android:layout_alignStart="@+id/checkBox20"
+        android:id="@+id/checkBox22"
+        android:buttonTint="#198"/>
+
+    <CheckBox
+        android:text="Metal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox23"
+        android:layout_below="@+id/checkBox21"
+        android:layout_alignLeft="@+id/checkBox21"
+        android:layout_alignStart="@+id/checkBox21"
+        android:buttonTint="#198"/>
+
+    <CheckBox
+        android:text="Electronic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox22"
+        android:layout_alignLeft="@+id/checkBox22"
+        android:layout_alignStart="@+id/checkBox22"
+        android:id="@+id/checkBox24"
+        android:buttonTint="#198"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/radioButton3"
+        android:layout_alignRight="@+id/checkBox22"
+        android:layout_alignEnd="@+id/checkBox22"
+        android:layout_toRightOf="@+id/checkBox22"
+        android:layout_toEndOf="@+id/checkBox22" />
+
+    <RadioButton
+        android:text="Round Robin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:id="@+id/radioButton"
+        android:layout_below="@+id/checkBox23"
+        android:layout_alignLeft="@+id/checkBox23"
+        android:layout_alignStart="@+id/checkBox23"
+        android:buttonTint="#198"/>
+
+    <RadioButton
+        android:text="Top Picks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton2"
+        android:layout_below="@+id/radioButton"
+        android:layout_alignLeft="@+id/radioButton"
+        android:layout_alignStart="@+id/radioButton"
+        android:buttonTint="#198"/>
+
+    <RadioButton
+        android:text="Admin Only"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton3"
+        android:layout_below="@+id/radioButton2"
+        android:layout_alignLeft="@+id/radioButton2"
+        android:layout_alignStart="@+id/radioButton2"
+        android:buttonTint="#198"/>
+
+    <RadioButton
+        android:text="List"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioButton3"
+        android:layout_alignLeft="@+id/radioButton3"
+        android:layout_alignStart="@+id/radioButton3"
+        android:id="@+id/radioButton4"
+        android:buttonTint="#198"/>
+
+    <TextView
+        android:text="Selection Modes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radioButton2"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginBottom="21dp"
+        android:id="@+id/textView20"
+        android:textColor="#000"/>
+
+    <TextView
+        android:text="(only one)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radioButton2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView21"
+        android:textColor="#000"/>
+
+
+
+
 </RelativeLayout>

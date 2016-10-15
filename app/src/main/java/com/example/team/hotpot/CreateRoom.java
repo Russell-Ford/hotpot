@@ -3,6 +3,8 @@ package com.example.team.hotpot;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.RadioButton;
 
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -15,6 +17,20 @@ public class CreateRoom extends AppCompatActivity {
         setContentView(R.layout.activity_create_room);
 
         Intent intent = getIntent();
+
+    }
+
+    public void goBack(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+
+    }
+
+    public void onRadioButton(View view) {
+        // Is the button now checked?
+        boolean checked = ((RadioButton) view).isChecked();
+
+        // Check which radio button is checked by using a for loop
 
     }
 }
