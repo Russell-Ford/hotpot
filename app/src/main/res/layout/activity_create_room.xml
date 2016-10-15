@@ -163,76 +163,86 @@
         android:id="@+id/checkBox24"
         android:buttonTint="#198"/>
 
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/radioButton3"
-        android:layout_alignRight="@+id/checkBox22"
-        android:layout_alignEnd="@+id/checkBox22"
-        android:layout_toRightOf="@+id/checkBox22"
-        android:layout_toEndOf="@+id/checkBox22" />
-
-    <RadioButton
-        android:text="Round Robin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
-        android:id="@+id/radioButton"
-        android:layout_below="@+id/checkBox23"
-        android:layout_alignLeft="@+id/checkBox23"
-        android:layout_alignStart="@+id/checkBox23"
-        android:buttonTint="#198"/>
-
-    <RadioButton
-        android:text="Top Picks"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/radioButton2"
-        android:layout_below="@+id/radioButton"
-        android:layout_alignLeft="@+id/radioButton"
-        android:layout_alignStart="@+id/radioButton"
-        android:buttonTint="#198"/>
-
-    <RadioButton
-        android:text="Admin Only"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/radioButton3"
-        android:layout_below="@+id/radioButton2"
-        android:layout_alignLeft="@+id/radioButton2"
-        android:layout_alignStart="@+id/radioButton2"
-        android:buttonTint="#198"/>
-
-    <RadioButton
-        android:text="List"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/radioButton3"
-        android:layout_alignLeft="@+id/radioButton3"
-        android:layout_alignStart="@+id/radioButton3"
-        android:id="@+id/radioButton4"
-        android:buttonTint="#198"/>
 
     <TextView
         android:text="Selection Modes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/radioButton2"
-        android:layout_alignLeft="@+id/textView3"
-        android:layout_alignStart="@+id/textView3"
-        android:layout_marginBottom="21dp"
         android:id="@+id/textView20"
-        android:textColor="#000"/>
+        android:textColor="#000"
+        android:layout_marginTop="32dp"
+        android:layout_alignTop="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:text="(only one)"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/radioButton2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:id="@+id/textView21"
-        android:textColor="#000"/>
+        android:textColor="#000"
+        android:layout_marginTop="17dp"
+        android:layout_alignTop="@+id/textView20"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/checkBox21"
+        android:layout_alignLeft="@+id/checkBox23"
+        android:layout_alignStart="@+id/checkBox23"
+        android:layout_marginTop="14dp">
+
+        <RadioGroup
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:text="Round Robin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:id="@+id/radioButton"
+                android:buttonTint="#198"/>
+
+            <RadioButton
+                android:text="Top Picks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton2"
+                android:buttonTint="#198"/>
+
+            <RadioButton
+                android:text="Admin Only"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton3"
+                android:buttonTint="#198"/>
+
+            <RadioButton
+                android:text="List"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton4"
+                android:buttonTint="#198"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:text="Create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/button7"
+        android:textColor="#000"
+        android:onClick="connection"/>
 
 
 
