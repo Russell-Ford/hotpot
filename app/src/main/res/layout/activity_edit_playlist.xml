@@ -32,9 +32,11 @@
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:id="@+id/edit_playlist"
         android:layout_below="@+id/textView4"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_above="@+id/button4" />
+        android:layout_above="@+id/button4">
+    </ListView>
 
 </RelativeLayout>
