@@ -29,7 +29,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void sendMessage(View view) {
+    public void createRoom(View view) {
+        Intent intent = new Intent(this, CreateRoom.class);
+        startActivity(intent);
+
+    }
+
+    public void joinRoom(View view) {
+        Intent intent = new Intent(this, JoinRoom.class);
+        startActivity(intent);
+
+    }
+
+    public void editPlaylist(View view) {
         Intent intent = new Intent(this, CreateRoom.class);
         startActivity(intent);
 
