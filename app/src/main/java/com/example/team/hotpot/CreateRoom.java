@@ -47,6 +47,7 @@ public class CreateRoom extends AppCompatActivity {
                         sleep(200);
                         jumpTime += 5;
                         progress.setProgress(jumpTime);
+
                     }
                     catch (InterruptedException e) {
                         // TODO Auto-generated catch block
@@ -56,6 +57,8 @@ public class CreateRoom extends AppCompatActivity {
             }
         };
         t.start();
+        Intent intent = new Intent(this, AdminView.class);
+        startActivity(intent);
     }
 
     public void goBack(View view) {
