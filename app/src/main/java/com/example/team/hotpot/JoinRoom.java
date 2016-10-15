@@ -3,6 +3,7 @@ package com.example.team.hotpot;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 public class JoinRoom extends AppCompatActivity {
 
@@ -12,5 +13,11 @@ public class JoinRoom extends AppCompatActivity {
         setContentView(R.layout.activity_join_room);
 
         Intent intent = getIntent();
+    }
+
+    public void goBack(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+
     }
 }

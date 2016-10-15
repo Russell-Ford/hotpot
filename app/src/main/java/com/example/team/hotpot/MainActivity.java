@@ -42,10 +42,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void editPlaylist(View view) {
-        Intent intent = new Intent(this, CreateRoom.class);
+        Intent intent = new Intent(this, EditPlaylist.class);
         startActivity(intent);
 
     }
+
 
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
