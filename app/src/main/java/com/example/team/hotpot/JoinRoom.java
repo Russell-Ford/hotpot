@@ -26,7 +26,6 @@ public class JoinRoom extends AppCompatActivity {
         progress=new ProgressDialog(this);
         progress.setMessage("Joining server...");
         progress.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
-        progress.setIndeterminate(true);
         progress.setProgress(0);
         progress.show();
 
@@ -46,7 +45,7 @@ public class JoinRoom extends AppCompatActivity {
                         // TODO Auto-generated catch block
                         e.printStackTrace();
                     }
-                }
+                }progress.dismiss();
             }
         };
         t.start();

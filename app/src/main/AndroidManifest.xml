@@ -34,7 +34,8 @@
         <activity
             android:name=".EditPlaylist"
             android:screenOrientation="portrait" />
-        <activity android:name=".AdminView"></activity>
+        <activity android:name=".AdminView"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
