@@ -25,7 +25,8 @@
 
         <activity android:name=".CreateRoom" />
         <activity android:name=".JoinRoom" />
-        <activity android:name=".EditPlaylist"></activity>
+        <activity android:name=".EditPlaylist" />
+        <activity android:name=".playlist"></activity>
     </application>
 
 </manifest>
