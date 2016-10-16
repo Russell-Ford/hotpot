@@ -30,7 +30,7 @@ public class AdminView extends AppCompatActivity {
         b1 = (Button) findViewById(R.id.button7);
 
         progress=new ProgressDialog(this);
-        progress.setMessage("Connecting to server...");
+        progress.setMessage("Creating server...");
         progress.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
         progress.setProgress(0);
         progress.show();
