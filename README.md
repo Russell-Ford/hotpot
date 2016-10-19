@@ -1,7 +1,7 @@
 # hotpot
 Music dj crowdsourcing app
 
-TODO:
+<h1>TODO:</h1>
 
 Implementation of lobbies
   -creation of lobbies (host waiting for p2p wifi conns)
