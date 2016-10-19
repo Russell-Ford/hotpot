@@ -3,17 +3,16 @@ Music dj crowdsourcing app
 
 <h1>TODO:</h1>
 <ul>
-<li>Implementation of lobbies</li>
-<ul>
-<li>creation of lobbies (host waiting for p2p wifi conns)</li>
-<li>joining of lobbies (pinging for users hosting lobbies)</li>
-</ul>
-  
+
+  <li>Implementation of lobbies</li>
+    <ul>
+    <li>creation of lobbies (host waiting for p2p wifi conns)</li>
+    <li>joining of lobbies (pinging for users hosting lobbies)</li>
+    </ul>
+
   <li>Editing settings of created lobbies</li>
   <li>Editing private playlist when not in a lobby</li>
   <li>Streaming of music from lobby members' phones</li>
   <li>Implementation of music selection algorithms (RR, Admin, etc.)</li>
-
-
-<li>Clean up UI (make it more sleek like a modern app such as snapchat)</li>
+  <li>Clean up UI (make it more sleek like a modern app such as snapchat)</li>
 </ul>
