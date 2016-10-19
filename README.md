@@ -4,8 +4,10 @@ Music dj crowdsourcing app
 <h1>TODO:</h1>
 <ul>
 <li>Implementation of lobbies</li>
+<ul>
 <li>creation of lobbies (host waiting for p2p wifi conns)</li>
 <li>joining of lobbies (pinging for users hosting lobbies)</li>
+</ul>
   
   <li>Editing settings of created lobbies</li>
   <li>Editing private playlist when not in a lobby</li>
